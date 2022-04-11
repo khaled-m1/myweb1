@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Lato:wght@300;400;700&family=Tajawal:wght@300;400;700;900&display=swap');
+body {
+    direction: rtl;
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    user-select: none;
+
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .section {
+    padding: 40px 0;
+    overflow: hidden;
+}
+:root {
+    --Color1: #5FC3FC;
+    --Color2: #61E2D8;
+    --Color3: #8395E2;
+    --Color4: #D6EE89;
+}
+/* navbar */
+.sidebar-nav {
+    direction: rtl;
+}
+.sidebar-nav ul li a {
+    color: #fff !important;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+    transition: 0.5s;
+    font-family: "frutiger-light";
+    margin-right: 3px;
+}
+.sidebar-nav ul li a:hover {
+    background-color: var(--Color3);
+    border-radius: 4px;
+}
+.sidebar-nav .offcanvas {
+    width: 220px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /*
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3cpath d='M -333.64872237120494%2c302 C -189.65%2c256.2 98.35%2c76.8 386.35127762879506%2c73 C 674.35%2c69.2 818.35%2c289.8 1106.351277628795%2c283 C 1394.35%2c276.2 1759.62%2c4.4 1826.351277628795%2c39 C 1893.08%2c73.6 1517.27%2c372.6 1440%2c456' stroke='rgba(128%2c 202%2c 197%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1309.537220781695%2c355 C -1165.54%2c336.6 -877.54%2c277.8 -589.537220781695%2c263 C -301.54%2c248.2 -157.54%2c327.2 130.46277921830495%2c281 C 418.46%2c234.8 588.56%2c28.6 850.462779218305%2c32 C 1112.37%2c35.4 1322.09%2c244.8 1440%2c298' stroke='rgba(238%2c 184%2c 83%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -217.03679263542665%2c32 C -73.04%2c122.2 214.96%2c474.6 502.96320736457335%2c483 C 790.96%2c491.4 934.96%2c114.2 1222.9632073645735%2c74 C 1510.96%2c33.8 1899.56%2c275.6 1942.9632073645735%2c282 C 1986.37%2c288.4 1540.59%2c141.2 1440%2c106' stroke='rgba(128%2c 202%2c 197%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+     opacity: 70%;
+    */
+}
+.sidebar-nav .offcanvas ul li a span {
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+}
+.sidebar-nav .offcanvas.show ul li a:hover span {
+    padding-left: 10px;
+}
+.sidebar-nav .dropdown-toggle::after {
+  position: relative;
+  top: 3px;
+}
+/* btn navbar*/
+.custom-toggler.navbar-toggler {
+    color: #fff;
+}
+
+.menu-btn{
+    z-index: 1;
+    right: 20px;
+    /*  left: 20px; */
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    border-color: none;
+  }
+  .menu-btn:hover {
+    border: none;
+  }
+  .menu-btn:checked {
+    border: none;
+  }
+#nava:hover {
+  color: #fff !important;
+}
+.dropdown-menu {
+  width: 220px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: var(--Color5) !important;
+  font-size: 13px !important;
+}
+/* btn navbar*/
+.logo-bar {
+    margin: auto;
+}
+.social_media1, .slink1{
+    color: #fff ;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/*Logo Size*/
+.size-logo {
+  width: 70px !important; 
+  height: 70px !important;
+}
+/*Header*/
+.img-header {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: 200px;
+}
+.text-header {
+    position: relative;
+    left: 120px;
+}
+@media only screen and (max-width: 1199px) {
+    .img-header {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        right: 70px;
+    }
+    .text-header {
+        position: relative;
+        left: -80px;
+        width: 80%;
+    }
+  }
+@media only screen and (max-width: 1024px) {
+    .img-header {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        right: 70px;
+    }
+    .text-header {
+        position: relative;
+        left: -80px;
+        width: 80%;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .img-header {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        right: 60px;
+    }
+    .text-header {
+        position: relative;
+        left: -55px;
+        width: 80%;
+    }
+  }
+  /*Serves*/
+  .badge {
+      text-align: center;
+      width: 320px !important;
+      height: 25px;
+      position: relative;
+      right: 450px;
+  }
+  .bg-secondary {
+      background-color: var(--Color1) !important;
+  }
+  @media only screen and (max-width: 900px) {
+    .badge {
+        text-align: center;
+        width: 320px !important;
+        height: 25px;
+        position: relative;
+        right: 150px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .badge {
+        text-align: center;
+        width: 320px !important;
+        height: 25px;
+        position: relative;
+        right: 30px;
+    }
+  }
+/*Clint*/
+/* Logos */
+.logos {
+    filter: grayscale(100%); 
+    width: 70px;
+    height: 70px;
+   
+}
+.logos:hover {
+filter: grayscale(0);
+}
+.carousel-control-next,
+.carousel-control-prev{
+filter: invert(100%);
+}
+/*Contact*/
+.contact {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 14vh;
+    background-color: var(--Color1);
+}
+.fab, .fas {
+    font-size: 28px;
+    color: #1F1E1E;
+}
+/*Footer*/
+footer {
+    text-align: left;
+}
